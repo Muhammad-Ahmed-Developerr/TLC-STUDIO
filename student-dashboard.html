@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal Dashboard | TLC ACADEMY</title>
+  <meta name="description" content="TLC Academy EduTech Student Portal. Track course progress, stream video lessons, take interactive quiz assessments, upload assignments, and launch TLC AI.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .dashboard-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 100vh;
+      background-color: #0D1614;
+      color: #FFFFFF;
+    }
+    .dashboard-sidebar {
+      background-color: #08100E;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      padding: 2rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .dash-nav-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      color: var(--gray-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all var(--transition-fast);
+      margin-bottom: 0.35rem;
+    }
+    .dash-nav-item:hover, .dash-nav-item.active {
+      background: var(--green);
+      color: #FFFFFF;
+    }
+    .dash-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 1.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div>
+        <a href="index.html" class="brand-logo" style="color: #FFF; font-size: 1.35rem; margin-bottom: 2.5rem; display: block;">
+          TLC ACADEMY
+        </a>
+
+        <nav>
+          <a href="#" class="dash-nav-item active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+          <a href="#lessonsSection" class="dash-nav-item"><i class="fa-solid fa-play"></i> Video Lessons</a>
+          <a href="#assignmentsSection" class="dash-nav-item"><i class="fa-solid fa-file-pen"></i> Assignments</a>
+          <a href="#quizSection" class="dash-nav-item"><i class="fa-solid fa-clipboard-question"></i> Quiz Assessment</a>
+          <a href="ai-assistant.html" class="dash-nav-item"><i class="fa-solid fa-robot" style="color: var(--pink);"></i> AI Assistant</a>
+          <a href="#certificatesSection" class="dash-nav-item"><i class="fa-solid fa-certificate"></i> Certificates</a>
+        </nav>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(255,255,255,0.04); border-radius: 12px; margin-bottom: 1rem;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;">MW</div>
+          <div>
+            <strong style="font-size: 0.85rem; display: block;">Maya Williams</strong>
+            <span style="font-size: 0.75rem; color: var(--gray-muted);">VTCT Level 2</span>
+          </div>
+        </div>
+        <a href="student-login.html" class="dash-nav-item" style="color: #ff6b6b;"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main style="padding: 2.5rem 3rem; overflow-y: auto;">
+      <!-- Welcome Header -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem;">
+        <div>
+          <span class="subtitle subtitle-green" style="color: #4DE0B1;">STUDENT LEARNING PORTAL</span>
+          <h1 class="heading-lg" style="color: #FFF; font-size: 2.5rem;">Welcome back, Maya.</h1>
+        </div>
+        <a href="ai-assistant.html" class="btn btn-pink btn-sm"><i class="fa-solid fa-robot"></i> Ask TLC AI Assistant</a>
+      </div>
+
+      <!-- Top Progress Metrics Row -->
+      <div class="grid-4" style="margin-bottom: 2.5rem;">
+        <div class="dash-card">
+          <span style="font-size: 0.75rem; color: var(--gray-muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">CURRENT COURSE</span>
+          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0.5rem 0; color: #FFF;">Level 2 Hair Professional</h3>
+          <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 0.75rem;">
+            <div style="width: 67%; height: 100%; background: var(--green);"></div>
+          </div>
+          <span style="font-size: 0.75rem; color: #4DE0B1; display: block; margin-top: 0.5rem; font-weight: 700;">67% Course Complete</span>
+        </div>
+
+        <div class="dash-card">
+          <span style="font-size: 0.75rem; color: var(--gray-muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">VIDEO LESSONS</span>
+          <h3 style="font-family: var(--font-serif); font-size: 2rem; margin: 0.5rem 0; color: #FFF;">18 / 24</h3>
+          <span style="font-size: 0.75rem; color: var(--gray-muted);">6 Lessons Remaining</span>
+        </div>
+
+        <div class="dash-card">
+          <span style="font-size: 0.75rem; color: var(--gray-muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">ASSIGNMENT GRADE</span>
+          <h3 style="font-family: var(--font-serif); font-size: 2rem; margin: 0.5rem 0; color: #4DE0B1;">94%</h3>
+          <span style="font-size: 0.75rem; color: var(--gray-muted);">Distinction Standard</span>
+        </div>
+
+        <div class="dash-card">
+          <span style="font-size: 0.75rem; color: var(--gray-muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">CPD HOURS EARNED</span>
+          <h3 style="font-family: var(--font-serif); font-size: 2rem; margin: 0.5rem 0; color: var(--pink);">14 Hrs</h3>
+          <span style="font-size: 0.75rem; color: var(--gray-muted);">Verified Portfolio</span>
+        </div>
+      </div>
+
+      <!-- Main Interactive Modules & Video Player Layout -->
+      <div class="grid-2" style="grid-template-columns: 1fr 1.8fr; gap: 2rem; margin-bottom: 3rem;" id="lessonsSection">
+        
+        <!-- Module Progress Checklist -->
+        <div class="dash-card">
+          <h3 class="heading-sm" style="color: #FFF; margin-bottom: 1.5rem;">Curriculum Progress</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 12px; border-left: 4px solid #4DE0B1;">
+              <strong style="font-size: 0.95rem; display: block;">Client Consultation</strong>
+              <span style="font-size: 0.75rem; color: #4DE0B1;">100% Completed ✓</span>
+            </div>
+
+            <div style="padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 12px; border-left: 4px solid #4DE0B1;">
+              <strong style="font-size: 0.95rem; display: block;">Shampooing & Steam Care</strong>
+              <span style="font-size: 0.75rem; color: #4DE0B1;">100% Completed ✓</span>
+            </div>
+
+            <div class="lesson-item active" style="padding: 1rem; background: rgba(21, 61, 50, 0.3); border-radius: 12px; border-left: 4px solid var(--green); cursor: pointer;">
+              <strong class="lesson-title" style="font-size: 0.95rem; display: block;">Cutting Fundamentals — Layering</strong>
+              <span style="font-size: 0.75rem; color: var(--pink); font-weight: 700;">In Progress (82%)</span>
+            </div>
+
+            <div class="lesson-item" style="padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 12px; border-left: 4px solid var(--gray-muted); cursor: pointer;">
+              <strong class="lesson-title" style="font-size: 0.95rem; display: block;">Styling & Silk Pressing</strong>
+              <span style="font-size: 0.75rem; color: var(--gray-muted);">65% In Progress</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Player Simulation Container -->
+        <div class="dash-card">
+          <div style="position: relative; border-radius: 12px; overflow: hidden; background: #000; height: 320px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80" alt="Video Lesson Thumbnail" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+            <button style="position: absolute; width: 64px; height: 64px; border-radius: 50%; background: var(--pink); color: #FFF; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px var(--pink-glow);" onclick="showToast('Streaming HD Video Lesson: Cutting Fundamentals');">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h3 id="activeLessonTitle" style="font-family: var(--font-serif); font-size: 1.5rem; color: #FFF; margin-bottom: 0.25rem;">Cutting Fundamentals — Layering</h3>
+              <p style="font-size: 0.85rem; color: var(--gray-muted); margin: 0;">Tutor: Amara Johnson • Duration: 24 Mins</p>
+            </div>
+            <button id="btnMarkLessonComplete" class="btn btn-black btn-sm">Mark Complete</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Quiz Engine Widget Section -->
+      <div class="dash-card" style="margin-bottom: 3rem;" id="quizSection">
+        <span class="subtitle subtitle-green" style="color: #4DE0B1;">ASSESSMENT QUIZ ENGINE</span>
+        <h3 class="heading-md" style="color: #FFF; margin-bottom: 1.5rem;">Theory Self-Assessment Quiz</h3>
+
+        <form id="academyQuizForm">
+          <div style="margin-bottom: 1.5rem;">
+            <p style="font-size: 1rem; color: #FFF; margin-bottom: 0.75rem;">1. Which critical factor must be tested before performing a chemical color transformation?</p>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+              <label style="cursor: pointer;"><input type="radio" name="q1" value="porosity" style="accent-color: var(--green);"> Hair Porosity & Elasticity</label>
+              <label style="cursor: pointer;"><input type="radio" name="q1" value="length" style="accent-color: var(--green);"> Hair Length Only</label>
+              <label style="cursor: pointer;"><input type="radio" name="q1" value="shampoo" style="accent-color: var(--green);"> Brand of Shampoo</label>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <p style="font-size: 1rem; color: #FFF; margin-bottom: 0.75rem;">2. How many hours prior to an oxidative color service must an allergy patch test be performed?</p>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+              <label style="cursor: pointer;"><input type="radio" name="q2" value="patch-test" style="accent-color: var(--green);"> 48 Hours</label>
+              <label style="cursor: pointer;"><input type="radio" name="q2" value="1hour" style="accent-color: var(--green);"> 1 Hour</label>
+              <label style="cursor: pointer;"><input type="radio" name="q2" value="none" style="accent-color: var(--green);"> Not Required</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-green"><i class="fa-solid fa-circle-check"></i> Submit Quiz Answers</button>
+        </form>
+      </div>
+
+      <!-- Quiz Score Modal -->
+      <div class="modal-backdrop" id="quizResultModal">
+        <div class="modal-content" style="text-align: center; color: var(--black);">
+          <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+          <div style="width: 70px; height: 70px; border-radius: 50%; background: var(--green-soft); color: var(--green); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.5rem auto;">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h3 class="heading-md" style="margin-bottom: 0.5rem;">Quiz Result Score</h3>
+          <p id="quizScoreDisplay" style="font-size: 1.5rem; font-weight: 700; color: var(--green); margin-bottom: 1.5rem;">100% Correct</p>
+          <p style="color: var(--gray-text); margin-bottom: 2rem;">Result logged into your VTCT digital portfolio record.</p>
+          <button class="btn btn-black" onclick="this.closest('.modal-backdrop').classList.remove('is-open');">Return to Dashboard</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

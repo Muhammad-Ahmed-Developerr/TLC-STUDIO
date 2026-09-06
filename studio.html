@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TLC STUDIO | Luxury Hair Experience & Bespoke Services</title>
+  <meta name="description" content="TLC Studio delivers luxury hair artistry, bespoke consultations, silk presses, color transformations, and extension installations in London & Manchester.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Brand Switcher Bar -->
+  <div class="top-brand-bar">
+    <div class="container brand-switcher-wrapper">
+      <div class="brand-switcher-pills">
+        <a href="studio.html" class="brand-pill active-studio" data-brand="studio">TLC STUDIO</a>
+        <a href="academy.html" class="brand-pill" data-brand="academy">TLC ACADEMY</a>
+      </div>
+      <div class="top-bar-contact">
+        <span><i class="fa-solid fa-location-dot"></i> Mayfair, London & City Center, Manchester</span>
+        <span><i class="fa-solid fa-phone"></i> +44 (0) 20 7946 0912</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        TLC STUDIO <span class="logo-badge badge-studio">SALON</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Ecosystem</a>
+        <a href="studio.html" class="nav-link active">Studio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="consultation.html" class="nav-link">Consultation</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-pink btn-sm"><i class="fa-regular fa-calendar"></i> Book Appointment</a>
+        <button class="mobile-toggle" aria-label="Toggle Mobile Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="studio.html" class="mobile-nav-link active">TLC Studio</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="consultation.html" class="mobile-nav-link">Consultation</a>
+      <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+      <a href="booking.html" class="mobile-nav-link">Book Appointment</a>
+      <a href="academy.html" class="mobile-nav-link">TLC Academy</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Studio Editorial Hero -->
+  <section class="section-padding-lg" style="background: linear-gradient(180deg, var(--off-white) 0%, var(--soft-neutral) 100%); position: relative;">
+    <div class="container">
+      <div class="grid-2 hero-split" style="align-items: center;">
+        <div data-reveal="left">
+          <span class="subtitle">LUXURY HAIR STUDIO</span>
+          <h1 class="heading-xl" style="margin-bottom: 1.5rem;">Hair, Elevated.</h1>
+          <p class="body-lead" style="margin-bottom: 2.5rem; max-width: 540px;">
+            Considered consultation. Expert technique. Beautiful, transformative results tailored strictly to your hair texture, condition, and aesthetic.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="booking.html" class="btn btn-pink btn-lg"><i class="fa-regular fa-calendar"></i> Book Appointment</a>
+            <a href="consultation.html" class="btn btn-outline btn-lg">Start Consultation</a>
+          </div>
+        </div>
+
+        <div data-reveal="right" style="position: relative;">
+          <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.12); border: 1px solid var(--white);">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80" alt="TLC Studio Hair Styling Artistry" style="height: 560px; width: 100%; object-fit: cover;">
+          </div>
+          <div style="position: absolute; bottom: -2rem; left: -2rem; background: var(--white); padding: 1.5rem 2rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); display: flex; align-items: center; gap: 1rem;">
+            <div style="color: #FFD700; font-size: 1.2rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <div>
+              <p style="font-weight: 700; font-size: 0.9rem; margin: 0;">5-Star Rated Salon</p>
+              <p style="font-size: 0.8rem; color: var(--gray-muted); margin: 0;">Over 800+ Verified Client Reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Services Grid -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto 4rem auto;" data-reveal>
+        <span class="subtitle">SIGNATURE SERVICES</span>
+        <h2 class="heading-lg">Tailored Hair Experiences</h2>
+        <p class="body-lead">Each service is executed with precision products and specialized techniques.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Service Card 1 -->
+        <div class="luxury-card" data-reveal data-delay="100">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Luxury Silk Press">
+            <span class="card-badge">STYLING</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Luxury Silk Press</h3>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.25rem;">
+              Deep moisture infusion, heat protection, precision blow-dry, and silk press finishing for ultimate shine and bounce.
+            </p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £85</span>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="luxury-card" data-reveal data-delay="200">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80" alt="Bespoke Colour Transformation">
+            <span class="card-badge">COLOUR</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Bespoke Colour Transformation</h3>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.25rem;">
+              Custom balayage, highlight placement, gloss treatment, and bond-building care customized to skin undertone.
+            </p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £160</span>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="luxury-card" data-reveal data-delay="300">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" alt="Signature Cut & Finish">
+            <span class="card-badge">CUTTING</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Signature Cut & Finish</h3>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.25rem;">
+              In-depth consultation, scalp treatment, architectural cutting, and tailored blow-dry styling.
+            </p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £70</span>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="services.html" class="btn btn-black btn-lg"><i class="fa-solid fa-list"></i> View All Services & Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Client Journey Section -->
+  <section class="section-padding bg-warm">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto 4rem auto;" data-reveal>
+        <span class="subtitle">THE EXPERIENCE</span>
+        <h2 class="heading-lg">Your Journey With TLC</h2>
+        <p class="body-lead">5 considered steps to your ultimate hair transformation.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem;" class="journey-grid">
+        <div style="background: var(--white); padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid var(--border);" data-reveal data-delay="100">
+          <span style="font-family: var(--font-serif); font-size: 2.5rem; color: var(--pink); font-weight: 700;">01</span>
+          <h4 style="margin: 0.75rem 0 0.5rem 0; font-size: 1.1rem;">Discover</h4>
+          <p style="font-size: 0.85rem; color: var(--gray-text);">Explore our signature portfolio and choose your desired service path.</p>
+        </div>
+
+        <div style="background: var(--white); padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid var(--border);" data-reveal data-delay="200">
+          <span style="font-family: var(--font-serif); font-size: 2.5rem; color: var(--pink); font-weight: 700;">02</span>
+          <h4 style="margin: 0.75rem 0 0.5rem 0; font-size: 1.1rem;">Consultation</h4>
+          <p style="font-size: 0.85rem; color: var(--gray-text);">Complete our diagnostic assessment or meet your specialist in studio.</p>
+        </div>
+
+        <div style="background: var(--white); padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid var(--border);" data-reveal data-delay="300">
+          <span style="font-family: var(--font-serif); font-size: 2.5rem; color: var(--pink); font-weight: 700;">03</span>
+          <h4 style="margin: 0.75rem 0 0.5rem 0; font-size: 1.1rem;">Plan</h4>
+          <p style="font-size: 0.85rem; color: var(--gray-text);">Receive a personalized treatment roadmap and product regimen.</p>
+        </div>
+
+        <div style="background: var(--white); padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid var(--border);" data-reveal data-delay="400">
+          <span style="font-family: var(--font-serif); font-size: 2.5rem; color: var(--pink); font-weight: 700;">04</span>
+          <h4 style="margin: 0.75rem 0 0.5rem 0; font-size: 1.1rem;">Appointment</h4>
+          <p style="font-size: 0.85rem; color: var(--gray-text);">Relax in our private luxury studio suite with complimentary refreshments.</p>
+        </div>
+
+        <div style="background: var(--white); padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid var(--border);" data-reveal data-delay="500">
+          <span style="font-family: var(--font-serif); font-size: 2.5rem; color: var(--pink); font-weight: 700;">05</span>
+          <h4 style="margin: 0.75rem 0 0.5rem 0; font-size: 1.1rem;">Transformation</h4>
+          <p style="font-size: 0.85rem; color: var(--gray-text);">Leave with healthy, radiant hair and customized aftercare guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Before & After Comparison Slider Section -->
+  <section class="section-padding bg-dark">
+    <div class="container">
+      <div class="grid-2" style="align-items: center;">
+        <div data-reveal="left">
+          <span class="subtitle" style="color: var(--pink);">TRANSFORMATION GALLERY</span>
+          <h2 class="heading-lg" style="color: var(--white); margin-bottom: 1.5rem;">See The Difference</h2>
+          <p class="body-lead" style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">
+            Drag the interactive slider to compare raw texture prior to TLC treatment against the final silk press & color transformation.
+          </p>
+          <a href="gallery.html" class="btn btn-pink"><i class="fa-solid fa-images"></i> Explore Full Gallery</a>
+        </div>
+
+        <div data-reveal="right">
+          <!-- Interactive Slider Container -->
+          <div class="ba-slider-container">
+            <!-- Before Image -->
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1000&q=80" alt="Before Hair Transformation">
+            <!-- After Image -->
+            <div class="ba-after-img">
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=80" alt="After Hair Transformation">
+            </div>
+            <!-- Slider Handle -->
+            <div class="ba-handle">
+              <div class="ba-handle-button">
+                <i class="fa-solid fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 1rem; color: var(--gray-muted); font-size: 0.85rem;">
+            <span>← BEFORE (Natural Condition)</span>
+            <span>AFTER (Silk Press & Hydration) →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Private Client VIP Membership Concept -->
+  <section class="section-padding bg-warm">
+    <div class="container">
+      <div style="background: var(--black); color: var(--white); padding: 4rem; border-radius: 24px; position: relative; overflow: hidden;" data-reveal="scale">
+        <div style="max-width: 600px;">
+          <span class="subtitle" style="color: var(--pink);">EXCLUSIVITY</span>
+          <h2 class="heading-lg" style="color: var(--white); margin-bottom: 1.5rem;">TLC Private Client Membership</h2>
+          <p style="color: var(--gray-muted); margin-bottom: 2rem;">
+            Priority weekend appointments, bespoke complimentary scalp treatments, private suite bookings, and early access to academy masterclasses.
+          </p>
+          <button class="btn btn-pink btn-lg" data-modal-target="vipWaitlistModal"><i class="fa-solid fa-crown"></i> Join VIP Waiting List</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Waiting List Modal -->
+  <div class="modal-backdrop" id="vipWaitlistModal">
+    <div class="modal-content">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <span class="subtitle">EXCLUSIVE ACCESS</span>
+      <h3 class="heading-md" style="margin-bottom: 1rem;">Join TLC Private Client Waiting List</h3>
+      <p style="color: var(--gray-text); margin-bottom: 1.5rem;">Be first to receive VIP membership invitation codes.</p>
+      <form onsubmit="event.preventDefault(); showToast('Added to VIP Waiting List!'); this.closest('.modal-backdrop').classList.remove('is-open');">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" required placeholder="e.g. Sophia Sterling">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" required placeholder="e.g. sophia@example.com">
+        </div>
+        <button type="submit" class="btn btn-pink" style="width: 100%;">Submit Interest</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: var(--white);">TLC STUDIO</a>
+          <p>Luxury Hair Studio & Hair Care Experience. Mayfair, London & City Center, Manchester.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="studio.html">Studio Home</a>
+            <a href="services.html">Services Catalogue</a>
+            <a href="consultation.html">Hair Consultation</a>
+            <a href="booking.html">Book Appointment</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Academy</h4>
+          <div class="footer-links">
+            <a href="academy.html">Academy Home</a>
+            <a href="academy-courses.html">Qualifications</a>
+            <a href="apply.html">Apply Now</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Legal</h4>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Settings</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4 class="footer-title">Stay Connected</h4>
+          <input type="email" placeholder="Your email address" style="width:100%; padding:1rem; background:rgba(255,255,255,0.05); border:1px solid var(--border-dark); border-radius:8px; color:var(--white); margin-bottom:0.75rem;">
+          <button class="btn btn-pink btn-sm" style="width:100%;">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© TLC Studio LTD 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/442079460912" target="_blank" rel="noopener" class="whatsapp-float">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

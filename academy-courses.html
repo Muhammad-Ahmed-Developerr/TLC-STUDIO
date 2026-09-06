@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accredited Course Catalogue | TLC ACADEMY</title>
+  <meta name="description" content="Explore VTCT Level 2 & Level 3 hair qualifications, specialist masterclasses, apprenticeships, and salon business programmes.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Brand Switcher Bar -->
+  <div class="top-brand-bar">
+    <div class="container brand-switcher-wrapper">
+      <div class="brand-switcher-pills">
+        <a href="studio.html" class="brand-pill" data-brand="studio">TLC STUDIO</a>
+        <a href="academy.html" class="brand-pill active-academy" data-brand="academy">TLC ACADEMY</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">TLC ACADEMY</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Ecosystem</a>
+        <a href="academy.html" class="nav-link academy-link">Academy</a>
+        <a href="academy-courses.html" class="nav-link active academy-link">Qualifications</a>
+        <a href="apply.html" class="nav-link academy-link">Apply</a>
+        <a href="funding.html" class="nav-link academy-link">Funding</a>
+        <a href="student-login.html" class="nav-link academy-link">Student Portal</a>
+      </nav>
+      <div class="header-actions">
+        <a href="apply.html" class="btn btn-green btn-sm">Apply Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section-padding bg-green-dark" style="color: var(--white);">
+    <div class="container" style="text-align: center;">
+      <span class="subtitle subtitle-green" style="color: #4DE0B1;">ACCREDITED EDUCATION</span>
+      <h1 class="heading-xl" style="color: var(--white);">Qualifications Catalogue</h1>
+      <p class="body-lead" style="color: rgba(255,255,255,0.8); max-width: 650px; margin: 1rem auto 0 auto;">
+        Industry-led hair education programs certified by VTCT and recognized worldwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- Course Catalogue Grid & Filters -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <!-- Filters -->
+      <div class="filter-nav" style="justify-content: center;">
+        <button class="filter-btn active active-green" data-filter="all">All Qualifications</button>
+        <button class="filter-btn" data-filter="apprenticeship">Apprenticeships</button>
+        <button class="filter-btn" data-filter="diploma">VTCT Diplomas</button>
+        <button class="filter-btn" data-filter="masterclass">Masterclasses</button>
+        <button class="filter-btn" data-filter="business">Salon Business</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid-3" id="coursesGrid">
+        <!-- Course 1 -->
+        <div class="luxury-card" data-category="diploma" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Level 2 Hair Professional">
+            <span class="card-badge" style="background: var(--green);">VTCT LEVEL 2</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Level 2 Hair Professional</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 18 Months</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Funding Available</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.85rem; margin-bottom: 1.25rem;">Fundamental consultation, shampooing, styling, precision cutting, and basic coloring.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="course-detail.html" class="btn btn-outline btn-sm" style="flex:1;">Course Details</a>
+              <a href="apply.html?course=l2-hair" class="btn btn-green btn-sm" style="flex:1;">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="luxury-card" data-category="diploma" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80" alt="Level 3 Advanced Hairdressing">
+            <span class="card-badge" style="background: var(--green);">VTCT LEVEL 3</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Level 3 Advanced Hairdressing</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 12 Months</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Learner Loans</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.85rem; margin-bottom: 1.25rem;">Advanced color correction, complex balayage, creative restyling, and salon leadership.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="course-detail.html" class="btn btn-outline btn-sm" style="flex:1;">Course Details</a>
+              <a href="apply.html?course=l3-hair" class="btn btn-green btn-sm" style="flex:1;">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="luxury-card" data-category="masterclass" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80" alt="Textured Hair Masterclass">
+            <span class="card-badge" style="background: var(--pink);">MASTERCLASS</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Textured Hair Masterclass</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 Weeks</span>
+              <span><i class="fa-solid fa-award"></i> CPD Certified</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.85rem; margin-bottom: 1.25rem;">Deep dive into Types 3A to 4C hair texture management, silk pressing, and moisture lock.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="course-detail.html" class="btn btn-outline btn-sm" style="flex:1;">Course Details</a>
+              <a href="apply.html?course=textured" class="btn btn-green btn-sm" style="flex:1;">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="luxury-card" data-category="masterclass" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Colour Specialist Certification">
+            <span class="card-badge" style="background: var(--pink);">SPECIALIST</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Professional Colour Specialist</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 8 Weeks</span>
+              <span><i class="fa-solid fa-palette"></i> Advanced Color</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.85rem; margin-bottom: 1.25rem;">Trichology of hair pigment, toning formulas, scalp prep, and high-fashion color melt.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="course-detail.html" class="btn btn-outline btn-sm" style="flex:1;">Course Details</a>
+              <a href="apply.html?course=color" class="btn btn-green btn-sm" style="flex:1;">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="luxury-card" data-category="business" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" alt="Salon Business Programme">
+            <span class="card-badge" style="background: var(--green);">BUSINESS</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Salon Business & Management</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 10 Weeks</span>
+              <span><i class="fa-solid fa-chart-line"></i> Hybrid</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.85rem; margin-bottom: 1.25rem;">Financial forecasting, client lifetime value, social media marketing, and team hiring.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="course-detail.html" class="btn btn-outline btn-sm" style="flex:1;">Course Details</a>
+              <a href="apply.html?course=business" class="btn btn-green btn-sm" style="flex:1;">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="luxury-card" data-category="apprenticeship" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" alt="16-19 Hair Professional Apprenticeship">
+            <span class="card-badge" style="background: var(--green);">APPRENTICESHIP</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">16–19 Hair Professional</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 24 Months</span>
+              <span><i class="fa-solid fa-coins"></i> 100% Gov Funded</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.85rem; margin-bottom: 1.25rem;">Earn while you learn with placement inside premier UK partner salons and TLC Studio.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="course-detail.html" class="btn btn-outline btn-sm" style="flex:1;">Course Details</a>
+              <a href="apply.html?course=apprentice" class="btn btn-green btn-sm" style="flex:1;">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding:0;">
+        <p>© TLC Studio LTD 2026. Accredited by VTCT.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

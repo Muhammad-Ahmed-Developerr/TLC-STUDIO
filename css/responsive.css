@@ -1,0 +1,160 @@
+/* ==========================================================================
+   TLC STUDIO LTD - RESPONSIVE STYLESHEET
+   Comprehensive Media Queries & Fluid Breakpoints
+   ========================================================================== */
+
+/* Ultra-wide Monitors (1600px+) */
+@media (min-width: 1600px) {
+  :root {
+    --max-width: 1560px;
+  }
+}
+
+/* Standard Laptops & Desktop (1200px to 1439px) */
+@media (max-width: 1439px) {
+  .container-fluid {
+    padding: 0 2.5rem;
+  }
+  .heading-xl {
+    font-size: clamp(3rem, 6.5vw, 6.5rem);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-top {
+    gap: 2.5rem;
+  }
+}
+
+/* Tablets Landscape & Small Laptops (1024px to 1199px) */
+@media (max-width: 1199px) {
+  :root {
+    --space-xl: 5.5rem;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-top {
+    grid-template-columns: 2fr repeat(2, 1fr);
+  }
+}
+
+/* Tablets Portrait & Large Mobile (768px to 1023px) */
+@media (max-width: 1023px) {
+  .main-nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .hero-split {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  .dashboard-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .dashboard-sidebar {
+    display: none;
+  }
+  .top-bar-contact {
+    display: none;
+  }
+  .stepper-header {
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
+  .step-item {
+    flex-shrink: 0;
+  }
+}
+
+/* Small Tablets & Mobile Devices (480px to 767px) */
+@media (max-width: 767px) {
+  :root {
+    --space-xl: 4rem;
+    --header-height: 75px;
+  }
+  .container {
+    padding: 0 1.25rem;
+  }
+  .container-fluid {
+    padding: 0 1.25rem;
+  }
+  .heading-xl {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+  .heading-lg {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .heading-md {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .filter-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+  }
+  .whatsapp-float {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra Small Phones (360px to 479px) */
+@media (max-width: 479px) {
+  .brand-logo {
+    font-size: 1.35rem;
+  }
+  .brand-switcher-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .modal-content {
+    padding: 2rem 1.25rem;
+  }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

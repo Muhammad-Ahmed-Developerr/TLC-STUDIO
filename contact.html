@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Studio & Academy | TLC STUDIO LTD</title>
+  <meta name="description" content="Get in touch with TLC Studio & Academy. Locations in Mayfair, London and Manchester City Center. Book salon appointments or request academy prospectus.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Brand Switcher Bar -->
+  <div class="top-brand-bar">
+    <div class="container brand-switcher-wrapper">
+      <div class="brand-switcher-pills">
+        <a href="studio.html" class="brand-pill active-studio" data-brand="studio">TLC STUDIO</a>
+        <a href="academy.html" class="brand-pill" data-brand="academy">TLC ACADEMY</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">TLC STUDIO LTD</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Ecosystem</a>
+        <a href="studio.html" class="nav-link">Studio</a>
+        <a href="academy.html" class="nav-link academy-link">Academy</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-pink btn-sm">Book Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section-padding bg-warm" style="border-bottom: 1px solid var(--border);">
+    <div class="container" style="text-align: center;">
+      <span class="subtitle">GET IN TOUCH</span>
+      <h1 class="heading-xl">Contact TLC Studio & Academy</h1>
+      <p class="body-lead" style="max-width: 600px; margin: 1rem auto 0 auto;">We welcome client inquiries, student admissions, and brand collaborations.</p>
+    </div>
+  </section>
+
+  <!-- Form & Location Info -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid-2" style="gap: 4rem;">
+        
+        <!-- Contact Form -->
+        <div data-reveal="left" style="background: var(--off-white); padding: 3rem; border-radius: 24px; border: 1px solid var(--border);">
+          <h2 class="heading-md" style="margin-bottom: 1.5rem;">Send Us A Message</h2>
+          
+          <form onsubmit="event.preventDefault(); showToast('Thank you! Your message has been sent to TLC Team.'); this.reset();">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" required placeholder="e.g. Rachel Adams">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" required placeholder="rachel@example.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" required placeholder="+44 7700 900444">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Inquiry Department</label>
+              <select class="form-control" required>
+                <option value="studio">TLC Studio — Hair Appointments & Pricing</option>
+                <option value="academy">TLC Academy — Student Admissions & Prospectus</option>
+                <option value="press">Press, Media & VIP Inquiries</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" required placeholder="How can our team assist you today?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-black btn-lg" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Enquiry</button>
+          </form>
+        </div>
+
+        <!-- Location Cards & Hours -->
+        <div data-reveal="right" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="subtitle">UK LOCATIONS</span>
+            <h2 class="heading-md" style="margin-bottom: 2rem;">Studio & Academy Campuses</h2>
+
+            <!-- London -->
+            <div style="background: var(--off-white); padding: 1.75rem; border-radius: 16px; border: 1px solid var(--border); margin-bottom: 1.5rem;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--pink);">Mayfair Flagship Studio & Campus</h3>
+              <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 0.75rem;"><i class="fa-solid fa-location-dot" style="color: var(--pink);"></i> 14 Berkeley Street, Mayfair, London W1J 8DX</p>
+              <p style="color: var(--gray-text); font-size: 0.9rem;"><i class="fa-solid fa-phone" style="color: var(--pink);"></i> +44 (0) 20 7946 0912</p>
+            </div>
+
+            <!-- Manchester -->
+            <div style="background: var(--off-white); padding: 1.75rem; border-radius: 16px; border: 1px solid var(--border); margin-bottom: 2rem;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--green);">Manchester City Center Campus</h3>
+              <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 0.75rem;"><i class="fa-solid fa-location-dot" style="color: var(--green);"></i> 82 King Street, Manchester M2 4WQ</p>
+              <p style="color: var(--gray-text); font-size: 0.9rem;"><i class="fa-solid fa-phone" style="color: var(--green);"></i> +44 (0) 161 496 0220</p>
+            </div>
+
+            <!-- Opening Hours -->
+            <div style="padding: 1.5rem; border: 1px dashed var(--border-dark); border-radius: 16px; background: var(--white);">
+              <h4 style="font-size: 1rem; margin-bottom: 0.75rem;"><i class="fa-regular fa-clock"></i> Studio & Campus Operating Hours</h4>
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray-text); margin-bottom: 0.35rem;">
+                <span>Monday – Friday:</span>
+                <strong>09:00 AM – 07:00 PM</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray-text); margin-bottom: 0.35rem;">
+                <span>Saturday:</span>
+                <strong>09:00 AM – 06:00 PM</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray-text);">
+                <span>Sunday:</span>
+                <strong style="color: var(--pink);">Closed (Private VIP Bookings Only)</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map Placeholder UI -->
+  <section class="section-padding bg-warm" style="padding-top: 0;">
+    <div class="container">
+      <div style="position: relative; height: 360px; border-radius: 24px; overflow: hidden; background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; display: flex; align-items: center; justify-content: center;" data-reveal="scale">
+        <div style="background: rgba(9,9,9,0.85); backdrop-filter: blur(12px); padding: 2rem 3rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+          <i class="fa-solid fa-map-location-dot" style="font-size: 2.5rem; color: var(--pink); margin-bottom: 1rem;"></i>
+          <h3 style="color: var(--white); font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.5rem;">Interactive Map Directions</h3>
+          <p style="color: var(--gray-muted); font-size: 0.85rem; margin-bottom: 1.25rem;">Mayfair Flagship & Manchester Campuses</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-pink btn-sm"><i class="fa-solid fa-directions"></i> Open Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding:0;">
+        <p>© TLC Studio LTD 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

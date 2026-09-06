@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Studio Appointment | TLC STUDIO</title>
+  <meta name="description" content="Book your luxury hair appointment online. Select services, preferred master stylist, date, and time slot with instant confirmation.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Brand Bar -->
+  <div class="top-brand-bar">
+    <div class="container brand-switcher-wrapper">
+      <div class="brand-switcher-pills">
+        <a href="studio.html" class="brand-pill active-studio" data-brand="studio">TLC STUDIO</a>
+        <a href="academy.html" class="brand-pill" data-brand="academy">TLC ACADEMY</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">TLC STUDIO</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Ecosystem</a>
+        <a href="studio.html" class="nav-link">Studio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="consultation.html" class="nav-link">Consultation</a>
+        <a href="booking.html" class="nav-link active">Booking</a>
+      </nav>
+      <div class="header-actions">
+        <a href="services.html" class="btn btn-outline btn-sm">Services List</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section-padding bg-warm" style="border-bottom: 1px solid var(--border);">
+    <div class="container" style="text-align: center;">
+      <span class="subtitle">ONLINE RESERVATION</span>
+      <h1 class="heading-xl">Book Your Appointment</h1>
+      <p class="body-lead" style="max-width: 600px; margin: 1rem auto 0 auto;">Experience personalized luxury hair care in Mayfair, London or City Center, Manchester.</p>
+    </div>
+  </section>
+
+  <!-- Stepper Booking Flow Container -->
+  <section class="section-padding bg-white">
+    <div class="container" style="max-width: 900px;" data-stepper>
+      
+      <!-- Stepper Header -->
+      <div class="stepper-header">
+        <div class="step-item active">
+          <div class="step-number">1</div>
+          <span class="step-label">Service</span>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <span class="step-label">Stylist</span>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <span class="step-label">Date & Time</span>
+        </div>
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <span class="step-label">Details</span>
+        </div>
+        <div class="step-item">
+          <div class="step-number">5</div>
+          <span class="step-label">Confirmation</span>
+        </div>
+      </div>
+
+      <!-- Step Pane 1: Service Selection -->
+      <div class="step-pane" style="display: block;">
+        <h3 class="heading-md" style="margin-bottom: 1.5rem;">01. Select Preferred Service</h3>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem;">
+          <label style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; border: 1px solid var(--border); border-radius: 16px; cursor: pointer; background: var(--off-white);">
+            <div>
+              <input type="radio" name="bookingService" checked style="accent-color: var(--pink); margin-right: 0.75rem;">
+              <strong style="font-size: 1.1rem;">Luxury Silk Press & Hydration</strong>
+              <p style="font-size: 0.85rem; color: var(--gray-text); margin: 0.25rem 0 0 1.75rem;">Steam moisture treatment, tension blow-dry, silk press & health trim.</p>
+            </div>
+            <span style="font-weight: 700; font-size: 1.1rem;">£85</span>
+          </label>
+
+          <label style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; border: 1px solid var(--border); border-radius: 16px; cursor: pointer;">
+            <div>
+              <input type="radio" name="bookingService" style="accent-color: var(--pink); margin-right: 0.75rem;">
+              <strong style="font-size: 1.1rem;">Signature Cut & Finish</strong>
+              <p style="font-size: 0.85rem; color: var(--gray-text); margin: 0.25rem 0 0 1.75rem;">Custom cut tailored to curl pattern and face structure.</p>
+            </div>
+            <span style="font-weight: 700; font-size: 1.1rem;">£70</span>
+          </label>
+
+          <label style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; border: 1px solid var(--border); border-radius: 16px; cursor: pointer;">
+            <div>
+              <input type="radio" name="bookingService" style="accent-color: var(--pink); margin-right: 0.75rem;">
+              <strong style="font-size: 1.1rem;">Bespoke Colour Transformation</strong>
+              <p style="font-size: 0.85rem; color: var(--gray-text); margin: 0.25rem 0 0 1.75rem;">Balayage, gloss glaze, and bond-building care.</p>
+            </div>
+            <span style="font-weight: 700; font-size: 1.1rem;">£160</span>
+          </label>
+        </div>
+
+        <div style="text-align: right;">
+          <button class="btn btn-pink btn-lg" data-step-next>Continue to Stylist Selection →</button>
+        </div>
+      </div>
+
+      <!-- Step Pane 2: Stylist Selection -->
+      <div class="step-pane" style="display: none;">
+        <h3 class="heading-md" style="margin-bottom: 1.5rem;">02. Choose Your Specialist</h3>
+        <div class="grid-3" style="margin-bottom: 2.5rem;">
+          <div style="border: 2px solid var(--pink); padding: 1.5rem; border-radius: 16px; text-align: center; background: var(--pink-soft);">
+            <div style="width: 70px; height: 70px; border-radius: 50%; overflow: hidden; margin: 0 auto 1rem auto;">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Master Stylist" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="margin: 0; font-size: 1.1rem;">Amara Johnson</h4>
+            <span style="font-size: 0.75rem; color: var(--pink); font-weight: 700;">TEXTURE MASTER</span>
+          </div>
+
+          <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 16px; text-align: center;">
+            <div style="width: 70px; height: 70px; border-radius: 50%; overflow: hidden; margin: 0 auto 1rem auto;">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Senior Colorist" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="margin: 0; font-size: 1.1rem;">Elena Rostova</h4>
+            <span style="font-size: 0.75rem; color: var(--gray-muted); font-weight: 700;">COLOUR SPECIALIST</span>
+          </div>
+
+          <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 16px; text-align: center;">
+            <div style="width: 70px; height: 70px; border-radius: 50%; background: var(--off-white); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem auto; color: var(--black);">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h4 style="margin: 0; font-size: 1.1rem;">First Available</h4>
+            <span style="font-size: 0.75rem; color: var(--gray-muted); font-weight: 700;">ANY SPECIALIST</span>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+          <button class="btn btn-outline" data-step-prev>← Back</button>
+          <button class="btn btn-pink" data-step-next>Select Date & Time →</button>
+        </div>
+      </div>
+
+      <!-- Step Pane 3: Date & Time Picker -->
+      <div class="step-pane" style="display: none;">
+        <h3 class="heading-md" style="margin-bottom: 1.5rem;">03. Select Date & Time Slot</h3>
+        <div class="grid-2" style="margin-bottom: 2.5rem;">
+          <div class="form-group">
+            <label class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" value="2026-09-12">
+          </div>
+          <div>
+            <label class="form-label">Available Time Slots</label>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;">
+              <button class="btn btn-outline btn-sm active" style="background: var(--pink); color: var(--white); border-color: var(--pink);">10:00 AM</button>
+              <button class="btn btn-outline btn-sm">11:30 AM</button>
+              <button class="btn btn-outline btn-sm">02:00 PM</button>
+              <button class="btn btn-outline btn-sm">04:15 PM</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+          <button class="btn btn-outline" data-step-prev>← Back</button>
+          <button class="btn btn-pink" data-step-next>Enter Contact Details →</button>
+        </div>
+      </div>
+
+      <!-- Step Pane 4: Client Contact Details -->
+      <div class="step-pane" style="display: none;">
+        <h3 class="heading-md" style="margin-bottom: 1.5rem;">04. Client Contact Details</h3>
+        <form id="bookingClientForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control" required value="Sophia">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control" required value="Sterling">
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" required value="sophia@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Phone</label>
+              <input type="tel" class="form-control" required value="+44 7700 900888">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Special Requests / Hair Notes</label>
+            <textarea class="form-control" style="min-height: 80px;" placeholder="Optional notes for your stylist..."></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+            <button type="button" class="btn btn-outline" data-step-prev>← Back</button>
+            <button type="button" class="btn btn-pink btn-lg" data-step-next>Confirm & Complete Reservation →</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step Pane 5: Confirmation -->
+      <div class="step-pane" style="display: none; text-align: center; padding: 3rem 0;">
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--pink-soft); color: var(--pink); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1.5rem auto;">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <h2 class="heading-lg" style="margin-bottom: 0.5rem;">Appointment Reserved!</h2>
+        <p style="color: var(--gray-text); max-width: 500px; margin: 0 auto 2rem auto;">
+          Thank you, Sophia. Your reservation confirmation code is <strong>#TLC-89241</strong>. A confirmation SMS & email calendar invitation has been generated.
+        </p>
+
+        <div style="background: var(--off-white); padding: 2rem; border-radius: 16px; max-width: 500px; margin: 0 auto 2.5rem auto; text-align: left; border: 1px solid var(--border);">
+          <h4 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Reservation Summary</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Service:</strong> Luxury Silk Press & Hydration (£85)</p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Stylist:</strong> Amara Johnson (Texture Specialist)</p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Date & Time:</strong> Saturday, 12 Sept 2026 at 10:00 AM</p>
+          <p style="font-size: 0.9rem; margin: 0;"><strong>Location:</strong> TLC Studio, Mayfair, London</p>
+        </div>
+
+        <a href="studio.html" class="btn btn-black btn-lg">Return to Studio Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding:0;">
+        <p>© TLC Studio LTD 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

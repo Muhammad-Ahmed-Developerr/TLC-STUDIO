@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Services & Pricing | TLC STUDIO</title>
+  <meta name="description" content="Explore our bespoke luxury hair service catalogue: cuts, silk presses, custom color balayage, extension installations, and texture treatments.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Brand Switcher Bar -->
+  <div class="top-brand-bar">
+    <div class="container brand-switcher-wrapper">
+      <div class="brand-switcher-pills">
+        <a href="studio.html" class="brand-pill active-studio" data-brand="studio">TLC STUDIO</a>
+        <a href="academy.html" class="brand-pill" data-brand="academy">TLC ACADEMY</a>
+      </div>
+      <div class="top-bar-contact">
+        <span><i class="fa-solid fa-location-dot"></i> London & Manchester</span>
+        <span><i class="fa-solid fa-phone"></i> +44 (0) 20 7946 0912</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">TLC STUDIO</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Ecosystem</a>
+        <a href="studio.html" class="nav-link">Studio</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="consultation.html" class="nav-link">Consultation</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-pink btn-sm">Book Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section-padding bg-warm" style="border-bottom: 1px solid var(--border);">
+    <div class="container" style="text-align: center;">
+      <span class="subtitle">TAILORED ARTISTRY</span>
+      <h1 class="heading-xl">Studio Services Catalogue</h1>
+      <p class="body-lead" style="max-width: 600px; margin: 1rem auto 0 auto;">Every appointment includes a comprehensive diagnostic consultation and specialized aftercare advice.</p>
+    </div>
+  </section>
+
+  <!-- Services & Filters Section -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <!-- Filter Nav -->
+      <div class="filter-nav" style="justify-content: center;">
+        <button class="filter-btn active active-pink" data-filter="all">All Services</button>
+        <button class="filter-btn" data-filter="consultation">Consultation</button>
+        <button class="filter-btn" data-filter="styling">Styling & Press</button>
+        <button class="filter-btn" data-filter="cutting">Cutting</button>
+        <button class="filter-btn" data-filter="colour">Colour</button>
+        <button class="filter-btn" data-filter="extensions">Extensions</button>
+        <button class="filter-btn" data-filter="treatments">Treatments</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid-3" id="servicesGrid">
+        <!-- Service 1 -->
+        <div class="luxury-card" data-category="styling" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Luxury Silk Press">
+            <span class="card-badge">STYLING</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Luxury Silk Press</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 90 Mins</span>
+              <span><i class="fa-solid fa-droplet"></i> Moisture Infusion</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.5rem;">Clarifying scalp cleanse, steam hydration therapy, tension blow-dry, and silky finish.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £85</span>
+              <a href="booking.html?service=silk-press" class="btn btn-pink btn-sm">Book Service</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="luxury-card" data-category="cutting" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" alt="Signature Cut & Finish">
+            <span class="card-badge">CUTTING</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Signature Cut & Finish</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 75 Mins</span>
+              <span><i class="fa-solid fa-scissors"></i> Architectural</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.5rem;">Precision cutting tailored to curl pattern, density, and face shape followed by signature finish.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £70</span>
+              <a href="booking.html?service=cut-finish" class="btn btn-pink btn-sm">Book Service</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="luxury-card" data-category="colour" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80" alt="Bespoke Colour Transformation">
+            <span class="card-badge">COLOUR</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Bespoke Colour Transformation</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 3.5 Hours</span>
+              <span><i class="fa-solid fa-wand-magic-sparkles"></i> Custom Balayage</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.5rem;">Full dimensional balayage or foil placement, gloss glaze, and bond-rebuilding treatment.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £160</span>
+              <a href="booking.html?service=colour" class="btn btn-pink btn-sm">Book Service</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="luxury-card" data-category="consultation" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Diagnostic Hair Consultation">
+            <span class="card-badge">CONSULTATION</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">In-Depth Consultation</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 30 Mins</span>
+              <span><i class="fa-solid fa-microscope"></i> Trichology Prep</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.5rem;">Comprehensive scalp analysis, elasticity test, strand test, and product prescription.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £35</span>
+              <a href="consultation.html" class="btn btn-black btn-sm">Start Consultation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="luxury-card" data-category="extensions" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80" alt="Microlink Extension Installation">
+            <span class="card-badge">EXTENSIONS</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Microlink Extension Install</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 Hours</span>
+              <span><i class="fa-solid fa-gem"></i> 100% Virgin Hair</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.5rem;">Seamless strand-by-strand application for weightless length and maximum volume flexibility.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £320</span>
+              <a href="booking.html?service=extensions" class="btn btn-pink btn-sm">Book Service</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="luxury-card" data-category="treatments" data-reveal>
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" alt="TLC Molecular Bond Treatment">
+            <span class="card-badge">TREATMENT</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Molecular Bond Repair</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 45 Mins</span>
+              <span><i class="fa-solid fa-shield-halved"></i> Intensive Repair</span>
+            </div>
+            <p style="color: var(--gray-text); font-size: 0.9rem; margin-bottom: 1.5rem;">Deep cellular repair restoring disulfide bonds damaged by chemical processing or heat.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="card-price">From £55</span>
+              <a href="booking.html?service=treatment" class="btn btn-pink btn-sm">Book Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding:0;">
+        <p>© TLC Studio LTD 2026. All rights reserved.</p>
+        <a href="booking.html" class="btn btn-pink btn-sm">Book Appointment</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

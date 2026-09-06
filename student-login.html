@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal Login | TLC ACADEMY</title>
+  <meta name="description" content="Access the TLC Academy EduTech Student Learning Portal. Login to view video lessons, submit assignments, track practical attendance, and consult TLC AI.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: var(--black); color: var(--white); min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Minimal Brand Header -->
+  <div style="padding: 1.5rem 2rem; border-bottom: 1px solid var(--border-dark); display: flex; justify-content: space-between; align-items: center;">
+    <a href="index.html" class="brand-logo" style="color: var(--white); font-size: 1.5rem;">
+      TLC ACADEMY <span class="logo-badge badge-academy">PORTAL</span>
+    </a>
+    <a href="index.html" style="color: var(--gray-muted); font-size: 0.85rem;"><i class="fa-solid fa-arrow-left"></i> Exit to Ecosystem</a>
+  </div>
+
+  <!-- Split Screen Container -->
+  <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr;" class="grid-2">
+    <!-- Left Hero Image Panel -->
+    <div style="background: linear-gradient(135deg, rgba(13,43,36,0.85), rgba(9,9,9,0.95)), url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; padding: 4rem; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--border-dark);">
+      <div>
+        <span class="subtitle subtitle-green" style="color: #4DE0B1;">EDUTECH PLATFORM</span>
+        <h1 class="heading-lg" style="color: var(--white); margin-top: 1rem;">Where technical skill becomes professional confidence.</h1>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.06); backdrop-filter: blur(12px); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
+        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); font-style: italic; margin-bottom: 0.5rem;">
+          “The digital learning portal and TLC AI assistant helped me pass my Level 3 distinction with full confidence.”
+        </p>
+        <span style="font-size: 0.8rem; font-weight: 700; color: #4DE0B1;">— Maya Sterling, Graduate Stylist</span>
+      </div>
+    </div>
+
+    <!-- Right Login Form Panel -->
+    <div style="padding: 5rem 4rem; display: flex; flex-direction: column; justify-content: center; background: var(--off-black);">
+      <div style="max-width: 440px; margin: 0 auto; width: 100%;">
+        <span class="subtitle subtitle-green" style="color: #4DE0B1;">WELCOME BACK</span>
+        <h2 class="heading-md" style="color: var(--white); margin-bottom: 0.5rem;">Sign In to Portal</h2>
+        <p style="color: var(--gray-muted); font-size: 0.9rem; margin-bottom: 2.5rem;">Enter your TLC student credentials to access your dashboard.</p>
+
+        <form action="student-dashboard.html">
+          <div class="form-group">
+            <label class="form-label" style="color: var(--white);">Student Email</label>
+            <input type="email" class="form-control form-control-dark" required value="maya.williams@tlc-student.co.uk">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: var(--white);">Password</label>
+            <input type="password" class="form-control form-control-dark" required value="password123">
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; font-size: 0.85rem;">
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--gray-muted);">
+              <input type="checkbox" checked style="accent-color: var(--green);"> Remember me
+            </label>
+            <a href="#" onclick="showToast('Password reset link sent to registered email!'); return false;" style="color: #4DE0B1;">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-green btn-lg" style="width: 100%; margin-bottom: 1.5rem;"><i class="fa-solid fa-right-to-bracket"></i> Sign In to Dashboard</button>
+        </form>
+
+        <div style="text-align: center; font-size: 0.9rem; color: var(--gray-muted); padding-top: 1.5rem; border-top: 1px solid var(--border-dark);">
+          New applicant? <a href="apply.html" style="color: var(--white); font-weight: 700; text-decoration: underline;">Apply for Enrolment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
