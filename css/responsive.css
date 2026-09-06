@@ -1,6 +1,7 @@
 /* ==========================================================================
-   TLC STUDIO LTD - RESPONSIVE STYLESHEET
-   Comprehensive Media Queries & Fluid Breakpoints
+   TLC STUDIO LTD - COMPREHENSIVE RESPONSIVE STYLESHEET
+   Supports Desktop (1920px), Laptop (1440px/1200px), Tablet (1024px/768px),
+   and Mobile Devices (480px, 390px, 360px).
    ========================================================================== */
 
 /* Ultra-wide Monitors (1600px+) */
@@ -10,13 +11,13 @@
   }
 }
 
-/* Standard Laptops & Desktop (1200px to 1439px) */
+/* Standard Laptops & Large Desktops (1200px to 1439px) */
 @media (max-width: 1439px) {
   .container-fluid {
     padding: 0 2.5rem;
   }
   .heading-xl {
-    font-size: clamp(3rem, 6.5vw, 6.5rem);
+    font-size: clamp(3rem, 6.2vw, 6.5rem);
   }
   .grid-4 {
     grid-template-columns: repeat(3, 1fr);
@@ -39,98 +40,179 @@
   }
   .footer-top {
     grid-template-columns: 2fr repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+  .journey-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
 /* Tablets Portrait & Large Mobile (768px to 1023px) */
 @media (max-width: 1023px) {
+  :root {
+    --space-xl: 4.5rem;
+    --header-height: 80px;
+  }
+
   .main-nav {
-    display: none;
+    display: none !important;
   }
   .mobile-toggle {
-    display: flex;
+    display: flex !important;
   }
+
   .grid-2 {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
   }
   .grid-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
   .hero-split {
     grid-template-columns: 1fr !important;
     gap: 3rem !important;
   }
+
+  /* Journey Grid 5 Steps on Studio Page */
+  .journey-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+
+  /* Dashboard Layout */
   .dashboard-layout {
     grid-template-columns: 1fr !important;
   }
   .dashboard-sidebar {
-    display: none;
+    display: none !important;
   }
+  .dashboard-layout main {
+    padding: 1.75rem 1.5rem !important;
+  }
+
+  /* AI Assistant Split Layout */
+  .ai-assistant-container .grid-2 {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+  }
+
   .top-bar-contact {
-    display: none;
+    display: none !important;
   }
+
   .stepper-header {
     overflow-x: auto;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
     padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
   }
   .step-item {
     flex-shrink: 0;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2.5rem !important;
   }
 }
 
 /* Small Tablets & Mobile Devices (480px to 767px) */
 @media (max-width: 767px) {
   :root {
-    --space-xl: 4rem;
-    --header-height: 75px;
+    --space-xl: 3.5rem;
+    --header-height: 72px;
   }
-  .container {
+
+  .container, .container-fluid {
     padding: 0 1.25rem;
   }
-  .container-fluid {
-    padding: 0 1.25rem;
-  }
+
   .heading-xl {
-    font-size: clamp(2.5rem, 10vw, 4rem);
+    font-size: clamp(2.3rem, 9.5vw, 3.8rem);
   }
   .heading-lg {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(1.8rem, 7.5vw, 2.8rem);
   }
   .heading-md {
-    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
   }
+  .heading-sm {
+    font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+  }
+
   .grid-4 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
+
+  .journey-grid {
+    grid-template-columns: 1fr !important;
+  }
+
   .footer-top {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
   }
   .footer-bottom {
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
   }
-  .btn {
-    width: 100%;
-  }
+
+  /* Hero & Action Buttons */
   .hero-actions {
     flex-direction: column;
     width: 100%;
   }
+  .btn {
+    width: 100%;
+  }
+  .header-actions .btn {
+    display: none;
+  }
+
+  /* Card Image Heights */
+  .card-img-wrapper {
+    height: 260px !important;
+  }
+
+  /* Filter Navigation Scroll */
   .filter-nav {
     overflow-x: auto;
     white-space: nowrap;
+    justify-content: flex-start !important;
     padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
   }
+  .filter-btn {
+    flex-shrink: 0;
+  }
+
+  /* Before / After Slider Mobile Height */
+  .ba-slider-container {
+    height: 340px !important;
+  }
+
+  /* Modal Responsiveness */
+  .modal-content {
+    padding: 2rem 1.25rem;
+    width: 94%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  /* WhatsApp Floating Button */
   .whatsapp-float {
     bottom: 1.25rem;
     right: 1.25rem;
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     font-size: 1.5rem;
   }
 }
@@ -138,14 +220,31 @@
 /* Extra Small Phones (360px to 479px) */
 @media (max-width: 479px) {
   .brand-logo {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
+  .logo-badge {
+    font-size: 0.55rem;
+    padding: 1px 6px;
+  }
+
   .brand-switcher-wrapper {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .modal-content {
-    padding: 2rem 1.25rem;
+
+  .card-content {
+    padding: 1.25rem !important;
+  }
+
+  .stepper-header {
+    gap: 1rem;
+  }
+  .step-label {
+    font-size: 0.65rem;
+  }
+
+  .dash-card {
+    padding: 1.25rem !important;
   }
 }
 
