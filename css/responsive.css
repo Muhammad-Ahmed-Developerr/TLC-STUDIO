@@ -1,23 +1,42 @@
 /* ==========================================================================
-   TLC STUDIO LTD - COMPREHENSIVE RESPONSIVE STYLESHEET
-   Supports Desktop (1920px), Laptop (1440px/1200px), Tablet (1024px/768px),
-   and Mobile Devices (480px, 390px, 360px).
+   TLC STUDIO LTD - COMPREHENSIVE RESPONSIVE & MOBILE STYLESHEET
+   Ensures 100% Fluid Responsiveness for All Buttons, Text, Images, Sliders,
+   Navbars, Cards, Steppers & Inputs across all screen sizes (320px - 1920px).
    ========================================================================== */
 
-/* Ultra-wide Monitors (1600px+) */
+/* --------------------------------------------------------------------------
+   0. Global Text & Overflow Safeguards
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+.heading-xl, .heading-lg, .heading-md, .heading-sm {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   1. Ultra-Wide Screens (1600px+)
+   -------------------------------------------------------------------------- */
 @media (min-width: 1600px) {
   :root {
     --max-width: 1560px;
   }
 }
 
-/* Standard Laptops & Large Desktops (1200px to 1439px) */
+/* --------------------------------------------------------------------------
+   2. Large Laptops & Desktops (1200px to 1439px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 1439px) {
   .container-fluid {
     padding: 0 2.5rem;
   }
   .heading-xl {
-    font-size: clamp(3rem, 6.2vw, 6.5rem);
+    font-size: clamp(2.8rem, 6vw, 6rem);
   }
   .grid-4 {
     grid-template-columns: repeat(3, 1fr);
@@ -27,7 +46,9 @@
   }
 }
 
-/* Tablets Landscape & Small Laptops (1024px to 1199px) */
+/* --------------------------------------------------------------------------
+   3. Small Laptops & Landscape Tablets (1024px to 1199px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
   :root {
     --space-xl: 5.5rem;
@@ -47,13 +68,16 @@
   }
 }
 
-/* Tablets Portrait & Large Mobile (768px to 1023px) */
+/* --------------------------------------------------------------------------
+   4. Portrait Tablets & Mobile Breakpoint Switch (768px to 1023px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 1023px) {
   :root {
     --space-xl: 4.5rem;
     --header-height: 80px;
   }
 
+  /* Header & Navigation */
   .main-nav {
     display: none !important;
   }
@@ -61,9 +85,10 @@
     display: flex !important;
   }
 
+  /* Layout Grids */
   .grid-2 {
     grid-template-columns: 1fr !important;
-    gap: 2.5rem !important;
+    gap: 2.25rem !important;
   }
   .grid-3 {
     grid-template-columns: 1fr !important;
@@ -76,16 +101,16 @@
 
   .hero-split {
     grid-template-columns: 1fr !important;
-    gap: 3rem !important;
+    gap: 2.5rem !important;
   }
 
-  /* Journey Grid 5 Steps on Studio Page */
+  /* Studio Journey Grid */
   .journey-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.25rem !important;
   }
 
-  /* Dashboard Layout */
+  /* Student Dashboard Portal */
   .dashboard-layout {
     grid-template-columns: 1fr !important;
   }
@@ -93,11 +118,12 @@
     display: none !important;
   }
   .dashboard-layout main {
-    padding: 1.75rem 1.5rem !important;
+    padding: 1.75rem 1.25rem !important;
   }
 
   /* AI Assistant Split Layout */
-  .ai-assistant-container .grid-2 {
+  .ai-assistant-container .grid-2,
+  .grid-2[style*="320px 1fr"] {
     grid-template-columns: 1fr !important;
     height: auto !important;
   }
@@ -106,6 +132,7 @@
     display: none !important;
   }
 
+  /* Stepper Headers */
   .stepper-header {
     overflow-x: auto;
     justify-content: flex-start;
@@ -123,7 +150,9 @@
   }
 }
 
-/* Small Tablets & Mobile Devices (480px to 767px) */
+/* --------------------------------------------------------------------------
+   5. Small Tablets & Mobile Devices (480px to 767px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   :root {
     --space-xl: 3.5rem;
@@ -134,20 +163,28 @@
     padding: 0 1.25rem;
   }
 
+  /* Fluid Typography Scaling */
   .heading-xl {
-    font-size: clamp(2.3rem, 9.5vw, 3.8rem);
+    font-size: clamp(2.2rem, 9vw, 3.6rem) !important;
+    line-height: 1.1 !important;
   }
   .heading-lg {
-    font-size: clamp(1.8rem, 7.5vw, 2.8rem);
+    font-size: clamp(1.75rem, 7vw, 2.6rem) !important;
+    line-height: 1.15 !important;
   }
   .heading-md {
-    font-size: clamp(1.4rem, 5.5vw, 2rem);
+    font-size: clamp(1.35rem, 5vw, 1.9rem) !important;
+    line-height: 1.2 !important;
   }
   .heading-sm {
-    font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+    font-size: clamp(1.15rem, 4vw, 1.5rem) !important;
+  }
+  .body-lead {
+    font-size: clamp(0.95rem, 3.5vw, 1.15rem) !important;
   }
 
-  .grid-4 {
+  /* Mobile Grid Stacking */
+  .grid-4, .grid-3, .grid-2 {
     grid-template-columns: 1fr !important;
   }
 
@@ -157,98 +194,135 @@
 
   .footer-top {
     grid-template-columns: 1fr !important;
-    gap: 2.5rem !important;
+    gap: 2rem !important;
   }
   .footer-bottom {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     text-align: center;
   }
 
-  /* Hero & Action Buttons */
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
+  /* Button System on Small Mobile */
+  .btn, .btn-lg, .btn-sm {
+    width: 100% !important;
+    padding: 0.85rem 1.25rem !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
   }
-  .btn {
-    width: 100%;
+  .hero-actions, .card-actions, .header-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
   }
   .header-actions .btn {
-    display: none;
+    display: none !important;
   }
 
-  /* Card Image Heights */
+  /* Images & Aspect Ratios */
   .card-img-wrapper {
-    height: 260px !important;
+    height: clamp(200px, 45vw, 300px) !important;
   }
 
-  /* Filter Navigation Scroll */
+  /* Before / After Interactive Slider */
+  .ba-slider-container {
+    height: clamp(240px, 50vw, 360px) !important;
+    border-radius: 12px !important;
+  }
+  .ba-handle-button {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Scrollable Category Filter Buttons Bar */
   .filter-nav {
     overflow-x: auto;
     white-space: nowrap;
     justify-content: flex-start !important;
     padding-bottom: 0.5rem;
+    margin-bottom: 2rem !important;
     -webkit-overflow-scrolling: touch;
   }
   .filter-btn {
-    flex-shrink: 0;
+    flex-shrink: 0 !important;
+    width: auto !important;
+    padding: 0.5rem 1.1rem !important;
+    font-size: 0.78rem !important;
   }
 
-  /* Before / After Slider Mobile Height */
-  .ba-slider-container {
-    height: 340px !important;
+  /* Forms & Touch Input Accessibility */
+  .form-control, select.form-control, textarea.form-control {
+    font-size: 16px !important; /* Prevents auto-zoom on mobile safari */
+    padding: 0.85rem 1rem !important;
+    border-radius: 10px !important;
   }
 
-  /* Modal Responsiveness */
+  /* Modals */
   .modal-content {
-    padding: 2rem 1.25rem;
-    width: 94%;
-    max-height: 90vh;
-    overflow-y: auto;
+    padding: 1.75rem 1.25rem !important;
+    width: 92% !important;
+    max-height: 88vh !important;
+    overflow-y: auto !important;
+    border-radius: 16px !important;
   }
 
   /* WhatsApp Floating Button */
   .whatsapp-float {
     bottom: 1.25rem;
     right: 1.25rem;
-    width: 52px;
-    height: 52px;
-    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
   }
 }
 
-/* Extra Small Phones (360px to 479px) */
+/* --------------------------------------------------------------------------
+   6. Compact Mobile Phones (320px to 479px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 479px) {
   .brand-logo {
-    font-size: 1.25rem;
+    font-size: 1.2rem !important;
   }
   .logo-badge {
-    font-size: 0.55rem;
-    padding: 1px 6px;
+    font-size: 0.5rem !important;
+    padding: 1px 5px !important;
   }
 
   .brand-switcher-wrapper {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: column !important;
+    gap: 0.4rem !important;
+  }
+  .brand-pill {
+    padding: 3px 10px !important;
+    font-size: 0.65rem !important;
   }
 
   .card-content {
-    padding: 1.25rem !important;
+    padding: 1.15rem !important;
   }
 
   .stepper-header {
-    gap: 1rem;
+    gap: 0.75rem !important;
+  }
+  .step-number {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 0.75rem !important;
   }
   .step-label {
-    font-size: 0.65rem;
+    font-size: 0.6rem !important;
   }
 
   .dash-card {
-    padding: 1.25rem !important;
+    padding: 1.15rem !important;
   }
 }
 
-/* Reduced Motion Accessibility */
+/* --------------------------------------------------------------------------
+   7. Reduced Motion Accessibility
+   -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
